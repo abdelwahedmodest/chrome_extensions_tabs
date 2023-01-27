@@ -1,0 +1,49 @@
+how can  redimensionnez  mes  images  in  ubuntu  16.4 LTS     32bits
+There are several ways to resize images in Ubuntu 16.04 LTS 32-bit:
+
+Using the ImageMagick command-line tool: You can install ImageMagick by running the command sudo apt-get install imagemagick in the terminal. Once installed, you can use the convert command to resize an image, for example: convert image.jpg -resize 50% newimage.jpg
+
+Using the GIMP image editing software: GIMP is a popular open-source image editing software that can be installed on Ubuntu by running the command sudo apt-get install gimp. Once installed, you can open an image in GIMP and use the Image > Scale Image option to resize it.
+
+Using the Nautilus file manager: Right-click on an image file and select the "Open with Image Viewer" option. Once the image is open, click on the "Edit" button and select the "Resize/Resample" option.
+
+Using Ubuntu's built-in "Photos" application: You can use the Photos application to import an image and use the Edit button to resize it.
+
+Keep in mind that resizing images can reduce the quality of the image, so it's a good idea to make a backup of the original image before resizing it.
+
+
+
+
+abdelwahed ahmed
+i want  to resize  image to   specific  size   in ubuntu  16.4 LTS  32bits
+You can use the ImageMagick command-line tool to resize an image to specific size in Ubuntu 16.04 LTS 32-bit.
+You can install ImageMagick by running the command sudo apt-get install imagemagick in the terminal.
+
+Once installed, you can use the convert command to resize an image to specific size, for example:
+
+css
+Copy code
+convert image.jpg -resize 320x240 newimage.jpg
+This command will resize the image to a width of 320 pixels and a height of 240 pixels.
+
+Alternatively, you can use the -resize option to change the size of the image maintaining the aspect ratio:
+
+css
+Copy code
+convert image.jpg -resize 320x newimage.jpg
+This command will resize the image to a width of 320 pixels, maintaining the aspect ratio of the original image.
+
+You can also use the -gravity option to specify the position of the image after resizing, for example:
+
+scss
+Copy code
+convert image.jpg -resize 320x240 -gravity center -extent 320x240 newimage.jpg
+This command will resize the image to a width of 320 pixels and a height of 240 pixels and it will center the image in the new space created.
+
+It's a good idea to make a backup of the original image before resizing it.
+
+
+
+Regenerate response
+
+

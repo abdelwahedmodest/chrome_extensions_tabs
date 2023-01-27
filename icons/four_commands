@@ -1,0 +1,8 @@
+icons   chrome  extension
+
+
+convert a.jpg -resize 19x19 1.jpg
+convert a.jpg -resize 38x19  2.jpg
+convert a.jpg -resize 38x38  3.jpg
+convert a.jpg -resize 128x128  4.jpg
+
